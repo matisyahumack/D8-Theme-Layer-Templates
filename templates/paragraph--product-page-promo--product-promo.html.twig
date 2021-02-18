@@ -1,0 +1,68 @@
+{% if "Right image" in content.field_orientation.0 %}
+<div class="product-promos promo-odd">
+	<div class="inner-container">
+		<div class="col-md-12">
+			<div class="col-md-6 vert-align">
+				<div class="align-vert">
+					<div class="field-icon">
+						{{ content.field_icon }}
+					</div>
+					<h2>{{ content.field_burb_title.0 }}</h2>
+					<p>{{ content.field_blurb_text.0 }}</p>
+					<div class="promo-links">
+						<div class="see-plans-"><a class="see-plans" href="{{ content.field_see_plans_link.0 }}">See Plans</a></div>
+						<div class="preview-link-"><a class="preview-link" href="{{ content.field_preview_link.0 }}">Preview</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 image-right">
+				<div class="promo-right-image">{{ content.field_promo_image.0}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% elseif "Left image" in content.field_orientation.0 %}
+<div class="inner-container">
+	<div class="col-md-12 product-promos">
+		<div class="col-md-6 image-left">
+			<div class="promo-left-image">{{ content.field_promo_image.0}}</div>
+		</div>
+		<div class="col-md-6 vert-align">
+			<div class="align-vert">
+				<div class="field-icon">
+					{{ content.field_icon }}
+				</div>
+				<h2>{{ content.field_burb_title.0 }}</h2>
+				<p>{{ content.field_blurb_text.0 }}</p>
+				<div class="promo-links">
+					<div class="see-plans-"><a class="see-plans" href="{{ content.field_see_plans_link.0 }}">See Plans</a></div>
+					<div class="preview-link-"><a class="preview-link" href="{{ content.field_preview_link.0 }}">Preview</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% elseif "Right CRM" in content.field_orientation.0 %}
+<div class="product-promos promo-odd-crm">
+	<div class="inner-container-crm">
+		<div class="col-md-12  product-promos-crm">
+			<div class="col-md-6 vert-align">
+				<div class="align-vert">
+					<div class="field-icon">
+						{{ content.field_icon }}
+					</div>
+					<h2>{{ content.field_burb_title.0 }}</h2>
+					<p>{{ content.field_blurb_text.0 }}</p>
+					<div class="promo-links">
+						<div class="see-plans-"><a class="see-plans" href="{{ content.field_see_plans_link.0 }}">SIGN UP</a></div>
+						<div class="preview-link-"><a class="preview-link" href="{{ content.field_preview_link.0 }}">SEE DEMO</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 image-right">
+				<div class="promo-right-image-crm">{{ content.field_promo_image.0}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}

@@ -1,0 +1,57 @@
+{% if "Grey" in content.field_panel_color.0 %}
+<div class="col-md-4 col-sm-12">
+	<div class="grey-panel">
+		<div class="product-amount">
+			{{ content.field_amount.0 }}{% if content.field_amount_per|render is not empty %}<span>/{{ content.field_amount_per.0 }}</span>{% endif %}
+		</div>
+		{% if content.field_rate_per_donation|render is not empty %}
+			<div class="product-perc-rate">{{ content.field_rate_per_donation.0 }} per successful donation</div>
+		{% endif %}
+		<div class="product-features">{{ content.field_features }}</div>
+		<div class="product-add-info">{{ content.field_additional_info.0 }}</div>
+	</div>
+	{% if content.field_signup_link|render is not empty %}
+		<div class="sigup-link-container">
+				<a href="{{ content.field_signup_link.0 }}" class="signup-link-grey">SIGN UP</a>
+		</div>
+	{% endif %}
+</div>
+{% endif %}
+{% if "Orange" in content.field_panel_color.0 %}
+<div class="col-md-4 col-sm-12">
+	<div class="orange-panel">
+		<div class="product-amount">
+			{{ content.field_amount.0 }}{% if content.field_amount_per|render is not empty %}<span>/{{ content.field_amount_per.0 }}</span>{% endif %}
+		</div>
+		{% if content.field_rate_per_donation|render is not empty %}
+			<div class="product-perc-rate">{{ content.field_rate_per_donation.0 }} per successful donation</div>
+		{% endif %}
+		<div class="product-features">{{ content.field_features }}</div>
+		<div class="product-add-info">{{ content.field_additional_info.0 }}</div>
+	</div>
+	{% if content.field_signup_link|render is not empty %}
+		<div class="sigup-link-container">
+				<a href="{{ content.field_signup_link.0 }}" class="signup-link-orange">SIGN UP</a>
+		</div>
+	{% endif %}
+</div>
+{% endif %}
+{% if "Red" in content.field_panel_color.0 %}
+<div class="col-md-4 col-sm-12">
+	<div class="red-panel">
+		<div class="product-amount">
+			{{ content.field_amount.0 }}{% if content.field_amount_per|render is not empty %}<span>/{{ content.field_amount_per.0 }}</span>{% endif %}
+		</div>
+		{% if content.field_rate_per_donation|render is not empty %}
+			<div class="product-perc-rate">{{ content.field_rate_per_donation.0 }} per successful donation</div>
+		{% endif %}
+		<div class="product-features">{{ content.field_features }}</div>
+		<div class="product-add-info">{{ content.field_additional_info.0 }}</div>
+	</div>
+	{% if content.field_signup_link|render is not empty %}
+		<div class="sigup-link-container">
+				<a href="{{ content.field_signup_link.0 }}" class="signup-link-red">SIGN UP</a>
+		</div>
+	{% endif %}
+</div>
+{% endif %}

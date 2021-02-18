@@ -1,0 +1,8 @@
+<div class="col-md-4 hp-product-mini">
+	{{ content.field_product_image }}
+	<h2>{{ content.field_product_title.0 }}</h2>
+	<p>{{ content.field_product_text.0 }}</p>
+	{% if content.field_read_more_link|render is not empty %}
+	<a href="{{ content.field_read_more_link.0 }}">READ MORE ⟶ </a>
+	{% endif %}
+</div>

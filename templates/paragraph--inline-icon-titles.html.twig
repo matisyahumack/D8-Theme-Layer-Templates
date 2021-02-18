@@ -1,0 +1,11 @@
+<div class="col-md-12 inline-icon-titles-wrapper">
+	<div class="inline-icons-icon">
+		{{ content.field_icon.0 }}
+	</div>	
+	<div class="inline-icons-title">
+		{{ content.field_icon_title.0 }}<br/>
+		{% if content.field_icon_sub_title|render is not empty %}
+		<span>{{ content.field_icon_sub_title.0 }}</span>
+		{% endif %}
+	</div>
+</div>

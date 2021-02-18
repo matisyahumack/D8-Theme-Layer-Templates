@@ -1,0 +1,17 @@
+<div class="col-md-12  hp-product-lg">
+	<div class="col-md-6 col-sm-6 col-sm-push-6 col-xs-12 hp-product-lg-text">
+		<div class="product-text">
+			<h2>{{ content.field_product_title.0 }}</h2>
+			<p class="hp-lg-text">{{ content.field_product_text.0 }}</p>
+			<a href="{{ content.field_read_more_link.0 }}">READ MORE —> </a>
+			
+			{% for key, item in content.field_oval.value %}
+				<div class="hp-oval"><img src="{{ file_url(content.field_image['#items'][0].entity.uri.value) }}" alt="{{ paragraph.field_image.alt }}" /></div>
+			{% endfor %}
+			
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-6 col-sm-pull-6 col-xs-12 hp-product-lg-image">
+		{{ content.field_product_image }}
+	</div>
+</div>
